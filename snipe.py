@@ -1,7 +1,8 @@
 # snipe.py
 import requests
-from ratelimiter import RateLimiter
+from rate_limit import RateLimiter
 from time import sleep
+
 
 class Snipe:
     def __init__(self, api_url, api_key, rate_limit, timeout=30):

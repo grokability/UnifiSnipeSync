@@ -12,6 +12,7 @@ class Snipe:
         self.headers = {
             "Accept": "application/json",
             "Content-Type": "application/json",
+            "User-Agent": "UnifiSnipeSync CLI",
             "Authorization": f"Bearer {self.api_key}"
         }
         self.rate_limiter = RateLimiter(max_calls=rate_limit, period=60)
